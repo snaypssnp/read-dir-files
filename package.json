@@ -1,0 +1,27 @@
+{
+  "name": "readdirfiles",
+  "version": "0.0.1",
+  "description": "Recursively read files from a directory",
+  "main": "./lib/readdirfiles.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mz",
+    "fs",
+    "recursive",
+    "file",
+    "co"
+  ],
+  "author": "Sergey Popov snaypssnp@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "mz": "^2.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "mock-fs": "^3.9.0"
+  }
+}
