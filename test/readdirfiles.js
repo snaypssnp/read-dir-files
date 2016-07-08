@@ -34,7 +34,7 @@ describe('Read files in directory', () => {
       });
   });
 
-  xit('should not be recursive', () => {
+  it('should not be recursive', () => {
     return readDirFiles('./', false)
       .then((data) => {
         data.should.be.a('object');
@@ -44,7 +44,7 @@ describe('Read files in directory', () => {
       });
   });
 
-  xit('should return a Error when called without dir', () => {
+  it('should return a Error when called without dir', () => {
     return readDirFiles()
       .then(should.fail)
       .catch((err) => {
