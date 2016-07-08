@@ -1,8 +1,10 @@
 'use strict';
-
-let readDirFiles = require('./lib/readdirfiles');
+const readDirFiles = require('./lib/readdirfiles');
 
 readDirFiles('./')
   .then((data) => {
     console.log(data);
   })
+  .catch((error) => {
+    console.log(error.stack);
+  });
